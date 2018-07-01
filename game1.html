@@ -1,0 +1,138 @@
+<!-- 
+Name: Sunil Thapa
+Un ID: 17421492
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Horse Racing</title>
+		<link rel="stylesheet" href="game1.css" />
+		<script src="game1.js"></script>
+	</head>
+
+	<body>
+		<table id="results">
+			<thead>
+			<tr>
+				<th>Results</th>
+				<th></th>
+			</tr>
+			</thead>
+			<tr>
+				<td>1st</td>
+				<td class="horse1"></td>
+			</tr>
+			<tr>
+				<td>2nd</td>
+				<td class="horse2"></td>
+			</tr>
+			<tr>
+				<td>3rd</td>
+				<td class="horse3"></td>
+			</tr>
+			<tr>
+				<td>4th</td>
+				<td class="horse4"></td>
+			</tr>
+		</table>
+
+		<div id="horse1" class="horse standRight">
+			<div class="rider">
+				<div class="head">
+				</div>
+
+				<div class="body">
+				</div>
+			</div>
+		</div>
+
+
+		<div id="horse2" class="horse standRight">
+			<div class="rider">
+				<div class="head">
+				</div>
+
+				<div class="body">
+				</div>
+			</div>
+		</div>
+
+
+		<div id="horse3" class="horse standRight">
+			<div class="rider">
+				<div class="head">
+				</div>
+
+				<div class="body">
+				</div>
+			</div>
+		</div>
+
+
+		<div id="horse4" class="horse standRight">
+			<div class="rider">
+				<div class="head">
+				</div>
+
+				<div class="body">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="track">
+			<div id="startline">
+
+			</div>
+			<div class="inner">
+				<div id="start">
+					Start Race
+				</div>
+
+				<div id="bet">
+					<p>You currently have <span id="funds">100</span></p>
+					<label>Bet Amount  (£)</label>
+					<input id="amount" value="" />
+					<label>Bet on horse:</label>
+					<select id="bethorse">
+						<option value="horse1">White</option>
+						<option value="horse2">Blue</option>
+						<option value="horse3">Green</option>
+						<option value="horse4">Brown</option>
+					</select>
+					<!-- Making Number Of Laps -->
+					<label>Number of Laps: </label>
+					<input id="numberOfLaps" value="" />
+					<!-- Changing tracks  -->
+					<label>Change track</label>
+					<select id="trackChange">
+					<!-- Track 1 is rectangle track whereas track 2 is digital 8 shaped track -->	
+						<option value="game.html">Track 1</option>
+						<option value="game1.html">Track 2</option>
+					</select>
+					<!-- Intial value of odds is 1 that changes as game loads via 1/2/3/4 -->
+					<label>Odds: </label>
+					<select id="odd">
+						<option value="1">x1</option>
+						<option value="2">x2</option>
+						<option value="3">x3</option>
+						<option value="4">x4</option>
+					</select>
+				</div>
+				<!-- Loads next page having next track -->
+				<input id="clickButton" type="button" value="Go To Next track" onclick="goToNewTrack()">
+				
+			</div>
+			<!-- Making track more attractive by adding image of tree -->
+			<div class="inner1">
+				<img src="images/tree.png" class="tree" />
+				<img src="images/tree.png" class="tree" />
+				<img src="images/tree.png" class="tree" />
+				<img src="images/tree.png" class="tree" />
+				<img src="images/tree.png" class="tree" />
+				<img src="images/tree.png" class="tree" />
+			</div>
+		</div>
+	</body>
+</html>
